@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Borgarbyggð</title>
+    <!-- Author: Unnar Thor Bachmann-->
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      
+    </style>
+    <!--<style src="style.css"></style>-->
+  </head>
+  <body>
+    <div id="header">
+      <div class="col-1">
+      </div>
+      <div class="col-10">
+        <h1> 
+          Borgarbyggð 
+        </h1>
+      </div>
+      <div class="col-1">
+      </div>
+    </div>
+    <div id="map">
+    </div> 
+    <div id="listView">
+      <div id = "filter">
+        <h3> Filter </h3>
+        <input data-bind="value: filterText, valueUpdate: 'afterkeydown'"> </input>
+      </div>
+      <div id="places">
+        <h3>Places</h3>
+        <ul display="inline" data-bind="foreach: filteredPlaceList">
+          <li display="inline">
+            <span data-bind="text: name, click: fireMarker"> </span> 
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+      
+    <script src="js\libs\knockout-3.2.0.js"></script>
+    <script src="js\libs\jquery.min.js"></script>
+    <script src="js\app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByMWjuVQfoUDlyfS-tydi7vgPSS2i5Exg&callback=initMap" onerror="googleError()"
+    async defer></script>
+  </body>
+</html>

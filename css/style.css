@@ -1,0 +1,35 @@
+/* Author: Unnar Thor Bachmann*/
+* {
+  -webkit-border-sizing: border-box;
+  -moz-border-sizing: border-box;
+  -ms-border-sizing: border-box;
+  border-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding-top: 0;
+  background-color: #f3f3f3;
+}
+
+input {
+  width: 30%;
+}
+
+.row {
+  width: 100%;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-10 {
+  width: 83.3333%;
+}
+
+#listView {
+  float: right;
+  width: 50%;
+}
