@@ -6,7 +6,7 @@ This is a project done by Unnar Thor Bachmann in the Udacity's front-developing 
 
 This project involves a construction of a neighborhood map using
 
-1. the Knockout framwork.
+1. the Knockout framwork (http://knockoutjs.com/).
 2. Google maps.
 3. ajax calls to Wikipedia.
 
